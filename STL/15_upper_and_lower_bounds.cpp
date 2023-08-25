@@ -1,12 +1,22 @@
 // Upper Bound and Lower Bound questions are those of binary search only.
 // Lower and upper bounds return memory location (pointers in case of arrays and iterators in case of vectors).
 // Lower and upper bounds are always used in 'sorted' array/vector since it works in O(log n) time. Else it will work in O(n) time. (sets & maps are already sorted)
-// For given no. in array/vector, lower bound returns location of that particular no. if present OR returns the location of next greater element if not present.
-// For given no. in array/vector, upper bound always returns location of the next greater element if present OR returns end iterator if not present.
+
+/*  
+The lower bound algorithm finds the first or the smallest index in a sorted array where the value at that index is greater than or equal to a given key i.e. x.
+The lower bound of x is the smallest index ind, where arr[ind] >= x. But if any such index is not found, the lower bound algorithm returns n i.e. size of the given array.
+*/      
+
+/*
+The upper bound algorithm finds the first or the smallest index in a sorted array where the value at that index is greater than the given key i.e. x.
+The upper bound is the smallest index, ind, where arr[ind] > x.
+But if any such index is not found, the upper bound algorithm returns n i.e. size of the given array. The main difference between the lower and upper bound is in the condition. 
+For the lower bound the condition was arr[ind] >= x and here, in the case of the upper bound, it is arr[ind] > x.
+*/
 
 // Example : 4 5 5 7 8 25
-// For 5, lower bound is 5 at index 1;  for 7, lower bound is 7 at index 3;  for 6, lower bound is 7 at index 3;  for 30, lower bound is end iterator.
-// For 5, upper bound is 7 at index 3;  for 7, upper bound is 8 at index 4;  for 6, upper bound is 7 at index 3;  for 30, lower bound is end iterator.
+// For 5, lower bound is 5 at index 1;  for 7, lower bound is 7 at index 3;  for 6, lower bound is 7 at index 3;  for 30, lower bound is end iterator i.e 6.
+// For 5, upper bound is 7 at index 3;  for 7, upper bound is 8 at index 4;  for 6, upper bound is 7 at index 3;  for 30, upper bound is end iterator i.e 6.
 
 #include <bits/stdc++.h>
 using namespace std;
