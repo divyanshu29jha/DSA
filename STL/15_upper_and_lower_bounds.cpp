@@ -15,8 +15,8 @@ For the lower bound the condition was arr[ind] >= x and here, in the case of the
 */
 
 // Example : 4 5 5 7 8 25
-// For 5, lower bound is 5 at index 1;  for 7, lower bound is 7 at index 3;  for 6, lower bound is 7 at index 3;  for 30, lower bound is end iterator i.e 6.
-// For 5, upper bound is 7 at index 3;  for 7, upper bound is 8 at index 4;  for 6, upper bound is 7 at index 3;  for 30, upper bound is end iterator i.e 6.
+// for 5, lower bound is 5 at index 1;  for 7, lower bound is 7 at index 3;  for 6, lower bound is 7 at index 3;  for 30, lower bound is end iterator i.e 6.
+// for 5, upper bound is 7 at index 3;  for 7, upper bound is 8 at index 4;  for 6, upper bound is 7 at index 3;  for 30, upper bound is end iterator i.e 6.
 
 #include <bits/stdc++.h>
 using namespace std;
