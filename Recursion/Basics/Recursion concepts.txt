@@ -1,0 +1,9 @@
+1) Base condition -  Condition for recursion to terminate, always written first at top.
+
+2) Tail recursion - recursive call is at the end. Carefully determine where the recursive call needs to done.
+
+3) Parametrized recursion: passing additional parameters to the recursive function to keep track
+   Forward recursion - the recursion parameter increases after each call
+   Backward recursion - the recursion parameter decreases after each call
+
+4) Functional recursion: defining a recursive function without any additional parameters. The function simply calls itself with a modified argument until it reaches the base case
