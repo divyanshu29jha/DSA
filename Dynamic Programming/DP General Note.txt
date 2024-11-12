@@ -1,0 +1,16 @@
+Step1. Identify a DP Problem (why greedy won't work).
+Step2. To solve the problem after identification:
+   1. Try to represent the given problem in terms of index.
+   2. Do all possible operations/stuff on that index according to the problem statement.
+   3. To count all possible ways - sum of all stuff. To find minimum/maximum - Take Minimum/maximum of all stuff.
+
+While solving:
+1) Write recursion solution using top-down approach first, if possible
+2) Memoize (top-down approach) it using dp vector --> reduces exponential time complexity to polynomial.
+3) Tabulation (bottom-up approach) using for-loops  --> no need of recursion stack space, but dp vector required.
+4) Space optimization in tabulation --> no need of extra dp vector or recursion stack space i.e O(1) space.
+
+
+
+
+

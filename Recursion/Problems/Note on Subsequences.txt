@@ -1,0 +1,24 @@
+Subsequences: Elements in same order as in original array but non-contagious elements allowed.
+
+Subarray: Elements in same order as in original array and only contiguous elements allowed.
+
+Power Set: Elements may be in different order as in original array and non-contagious elements allowed. Set of all subsets of an array.
+Subset: Elements may be in different order as in original array and non-contagious elements allowed.
+
+
+
+
+All possible patters from Subsequence:
+
+1. Print all the distinct Subsequence --> Parameter wise
+2. Print all Subsequence which sums to K --> Parameter wise
+3. Print only 1st Subsequence which sums to K --> Return true/false based on sum==k and avoid further recursion calls if you get true.
+4. Print the count of all Subsequence which sums to K  --> Return 0/1 based on sum==k and add all recursion calls f() i.e l+r here.
+
+i.e
+Better String [Print all distinct Subsequences]
+[Check if there exists a subsequence with sum K]
+Perfect Sum Problem [Count all subsequences with sum K]
+
+
+

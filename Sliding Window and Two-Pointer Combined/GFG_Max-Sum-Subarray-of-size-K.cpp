@@ -36,7 +36,7 @@ public:
         maxSum = max(sum, maxSum);   // Imp: If K == N, then while-loop will not run and maxSum will be returned
         
         // Slide the window
-        while(r < N-1){       // Imp: r < N_!
+        while(r < N-1){       // Imp: r < N-1
             sum -= Arr[l];    // Remove the leftmost element of the window
             l++;              // Move left pointer one step forward
             r++;              // Move right pointer one step forward
